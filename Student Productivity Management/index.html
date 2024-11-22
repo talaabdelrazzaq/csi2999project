@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Productivity Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="todo-list">
+        <h2> To-Do List</h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Enter task:">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id ="list-container">
+            <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+        </ul>
+    </div>
+    <div class="study-timer" id="timer"></div>
+    <div class="calculator">
+        <input type="text"  id="outputscreen" placeholder="0">
+        <button onclick="Clear()">Cl</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="Calculate()"class="equal">=</button>
+    </div>
+</div>
+<script src="projectscript.js" type="module" defer></script>
+</body>
+</html>
+
+
